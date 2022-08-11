@@ -160,9 +160,12 @@
     <p>informe toi sur nos nouvelles marchandises et
     <span>offres spéciales</span></p>
   </div>
-  <div class="form"onsubmit="sendEmail(); reset();return false;">
-    <input type="text" placeholder="votre  adresse email">
-    <button type="submit" class="normal" >inscris-toi</button>
+  <div class="form"">
+     <form action="https://formsubmit.co/jtrista3honorovitch93@gmail.com" method="POST">               
+    <input type="text" placeholder="votre  adresse email" required >
+     <input hidden name="message" value="Salut!Je suis interresse par vos services" type="text">                                                    
+    <button type="submit" class="normal" >inscris-toi</button
+      </form>                                   
   </div>
 
 </section>
@@ -203,22 +206,7 @@
  
 
  <script src="script.js"></script> 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "jtrista3honorovitch93@gmail.com",
-    Password : "Marie@93",
-    To : 'jtrista3honorovitch93@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-        }
-    </script>
+    
     
 </body>
 </html>
