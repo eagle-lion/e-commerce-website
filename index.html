@@ -160,7 +160,7 @@
     <p>informe toi sur nos nouvelles marchandises et
     <span>offres spéciales</span></p>
   </div>
-  <div class="form"onsubmit="sendEmail()">
+  <div class="form"onsubmit="sendEmail(); reset();return false;">
     <input type="text" placeholder="votre  adresse email">
     <button type="submit" class="normal" >inscris-toi</button>
   </div>
@@ -218,6 +218,7 @@
   message => alert(message)
 );
         }
+    </script>
     
 </body>
 </html>
