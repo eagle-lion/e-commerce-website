@@ -160,9 +160,9 @@
     <p>informe toi sur nos nouvelles marchandises et
     <span>offres spéciales</span></p>
   </div>
-  <div class="form">
+  <div class="form"onsubmit="sendEmail()">
     <input type="text" placeholder="votre  adresse email">
-    <button class="normal" >inscris-toi</button>
+    <button type="submit" class="normal" >inscris-toi</button>
   </div>
 
 </section>
@@ -202,6 +202,22 @@
 
  
 
- <script src="script.js"></script>   
+ <script src="script.js"></script> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    
 </body>
 </html>
