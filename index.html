@@ -161,7 +161,7 @@
     <span>offres spéciales</span></p>
   </div>
 <div class="main">
-        <form id="singular-form">
+        <form onclick="sendEmail()";reset();return false; id="singular-form">
             <button class="shown" type="button" id="subs">Abonne-toi</button>
             <div id="email-input">
                 <input type="text" placeholder="E-mail" id="email">
@@ -212,7 +212,21 @@
     <script  src="function.js"></script>
 
  <script src="script.js"></script> 
-    
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
 </body>
 </html>
