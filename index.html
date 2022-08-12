@@ -161,11 +161,11 @@
     <span>offres spéciales</span></p>
   </div>
 <div class="main">
-        <form  id="singular-form">
+        <form onclick="sendEmail()";reset();return false; id="singular-form">
             <button class="shown" type="button" id="subs">Abonne-toi</button>
             <div id="email-input">
                 <input type="text" placeholder="E-mail" id="email">
-                <button onclick="sendEmail()";reset();return false; type="button" class="addbut1" disabled="disabled">Je m'abonne</button>
+                <button type="button" class="addbut1" disabled="disabled">Je m'abonne</button>
             </div>
             <div id="success">Felicitations!</div>
         </form>
@@ -219,14 +219,12 @@
     Host : "smtp.elasticemail.com",
     Username : "jtrista3honorovitch93@gmail.com",
     Password : "52FF593F71BF3D1A266443777680D0EFD21D",
-    To : 'iamastar1995@gmail.com',
+    To : 'iam1995@gmail.com',
     From : document.getElementById("email").value,
     Subject : "Salut,je suis interesse par vos services et produits",
-    Body :
-                +"<br> Email:"+document.getElementById("email").value
-                
+    Body : "And this is the body"
 }).then(
-  message => alert("Message envoye")
+  message => alert(message)
 );
         }
     </script>
