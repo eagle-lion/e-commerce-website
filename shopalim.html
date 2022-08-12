@@ -272,6 +272,26 @@ function getPageList(totalPages, page ,maxLength){
       });
 </script>
  <script src="script.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="function.js"></script>
+
+  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "jtrista3honorovitch93@gmail.com",
+    Password : "52FF593F71BF3D1A266443777680D0EFD21D",
+    To : 'edenecommerce2.0@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Salut,je suis interesse par vos services et produits",
+    Body :"Email:" + document.getElementById("email").value
+}).then(
+  message => alert("message envoye")
+);
+        }
+    </script>
 </body>
 </html>
 
