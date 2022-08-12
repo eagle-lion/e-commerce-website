@@ -58,11 +58,16 @@
       <p>informe toi sur nos nouvelles marchandises et
       <span>offres spéciales</span></p>
     </div>
-    <div class="form">
-      <input type="text" placeholder="votre  adresse email">
-      <button class="normal" >inscris-toi</button>
+    <div class="main">
+        <form onsubmit="sendEmail(); reset();  return false;"  id="singular-form">
+            <button class="shown" type="button" id="subs">Abonne-toi</button>
+            <div id="email-input">
+                <input type="text" placeholder="E-mail" id="email">
+                <button type="submit"  class="addbut1" disabled="disabled">Je m'abonne</button>
+            </div>
+            <div id="success">Felicitations!</div>
+        </form>
     </div>
-  
   </section>
 
 <footer class="section-p1" >
