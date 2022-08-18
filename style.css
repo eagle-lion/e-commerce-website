@@ -745,6 +745,7 @@ footer .copyright{
    .previous-page,.next-page{
     
     width:40px;
+       border-radius:50%;
     
 } 
  
@@ -825,7 +826,7 @@ footer .copyright{
          .previous-page,.next-page{
     
     width:40px;
-    
+    border-radius:50%;
 } 
  
         
