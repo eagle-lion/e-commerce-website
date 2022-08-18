@@ -742,6 +742,11 @@ footer .copyright{
        transition:0.3s;
        
     }
+   .previous-page,.next-page{
+    
+    width:50px;
+    
+} 
  
     
     
@@ -817,7 +822,12 @@ footer .copyright{
            background-position: 72%;
        }
         
-        
+         .previous-page,.next-page{
+    
+    width:50px;
+    
+} 
+ 
         
 
        
