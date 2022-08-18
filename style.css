@@ -744,8 +744,8 @@ footer .copyright{
     }
    .previous-page,.next-page{
     
-    width:80px;
-       border-radius:45px;
+    width:45px;
+       border-radius:80%;
     
 } 
  
@@ -825,8 +825,8 @@ footer .copyright{
         
          .previous-page,.next-page{
     
-    width:80px;
-    border-radius:45px;
+    width:45px;
+    border-radius:80%;
 } 
  
         
