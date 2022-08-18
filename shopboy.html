@@ -1497,7 +1497,7 @@ function getPageList(totalPages, page ,maxLength){
         var numberOfItems= $("#product1 .pro").length;
         var limitPerPage=4;
         var totalPages=Math.ceil(numberOfItems / limitPerPage);
-        var paginationSize= 3;/* many page elements visible in the pagination*/
+        var paginationSize= 4;/* many page elements visible in the pagination*/
         var currentPage;
          function ShowPage(whichPage){
             if(whichPage<1 || whichPage>totalPages)return false;
