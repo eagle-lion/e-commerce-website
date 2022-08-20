@@ -1393,8 +1393,7 @@
 
   
  <script type="text/javascript">
-  
-function getPageList(totalPages, page ,maxLength){
+  function getPageList(totalPages, page ,maxLength){
     function range(start , end){
         return Array.from(Array(end - start + 1),(_ , i)=> i + start );
     }
@@ -1461,8 +1460,8 @@ function getPageList(totalPages, page ,maxLength){
          $(".previous-page").on("click",function (){
             return ShowPage(currentPage - 1);
          });
-      
-  }
+      });
+
      
          
 </script>
